@@ -1,2 +1,2 @@
 # Python-Programming
-Learning python one task at a tim.
+Learning python one task at a time.
