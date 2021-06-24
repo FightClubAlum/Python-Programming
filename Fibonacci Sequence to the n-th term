@@ -1,0 +1,27 @@
+# GUILLERMO GUZMAN - Printing the Fibonacci Sequence to the n-th term
+
+print("Printing the Fibonacci Sequence to the n-th term")
+print("\n")
+
+n1 = 0
+n2 = 1
+Count = 0
+
+NumTerms = int(input("How many terms in this Fibonacci Sequence?: "))
+print("\n")
+
+if NumTerms <= 0:
+    print("Invalid Input: Fibonacci sequences require positive integers")
+elif NumTerms ==1:
+    print("Fibonacci sequence to the", NumTerms, ":", n1)
+else:
+    print("Fibonacci Sequence: ")
+    print("\n")
+    while Count < NumTerms:
+        print(n1)
+        nth = n1 + n2
+        n1 = n2
+        n2 = nth
+        Count = Count + 1
+
+print("\n")
