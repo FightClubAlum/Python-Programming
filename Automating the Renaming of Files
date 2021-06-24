@@ -1,0 +1,24 @@
+# GUILLERMO GUZMAN - Renaming multiple files at once.
+
+import os
+
+# Defining method for renaming multiple files
+
+def main():
+    i = 0
+    path = "d:\\Users\\Guillermo\\Desktop\\Personal Projects\\Python Code\\Renaming_Multiple_Files\\Files_To_Rename\\"
+
+    # Path above must be changed when choosing new files to rename
+    # Extension must be changed depending on files to be changed. In this case, .jpg images.
+
+    for filename in os.listdir(path):
+        new_name = "Image" + str(i) + ".jpg"
+        old_name = path + filename
+        new_name = path + new_name
+        os.rename(old_name, new_name)
+        i = i + 1
+
+# Calling main method
+
+if __name__ == '__main__':
+   main()
